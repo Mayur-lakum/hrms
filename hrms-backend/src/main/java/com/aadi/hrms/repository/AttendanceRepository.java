@@ -1,0 +1,25 @@
+package com.aadi.hrms.repository;
+
+import com.aadi.hrms.entity.Attendance;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+
+public interface AttendanceRepository
+        extends JpaRepository<Attendance, Long> {
+
+    boolean existsByEmployeeIdAndAttendanceDate(
+            Long employeeId,
+            LocalDate attendanceDate
+    );
+
+    Optional<Attendance> findByEmployeeIdAndAttendanceDate(
+            Long employeeId,
+            LocalDate attendanceDate
+    );
+
+    List<Attendance> findByEmployeeId(Long employeeId);
+}
+

@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+a {
+  color: #1a5fb4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+button {
+  padding: 7px 12px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+input,
+select,
+textarea {
+  padding: 7px 9px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 15px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+th {
+  background: #eeeeee;
+  font-weight: 600;
+}
+
+tr:hover {
+  background: #f5f5f5;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+form > div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  max-width: 450px;
+}
+
+form button {
+  margin-top: 5px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 18px;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.error-message {
+  color: #b00020;
+  background: #ffe8e8;
+  border: 1px solid #e0aaaa;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  color: #176b2c;
+  background: #e8f5e9;
+  border: 1px solid #a8d5b0;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.action-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.details-container {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.details-container p {
+  margin: 10px 0;
+}
+
+
+
+.app-layout {
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 25px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand h2 {
+  margin: 0;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.content-layout {
+  display: flex;
+  min-height: calc(100vh - 65px);
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  min-width: 0;
+}
+
+.sidebar {
+  width: 210px;
+  flex-shrink: 0;
+  background: white;
+  border-right: 1px solid #ddd;
+  padding: 25px 15px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 9px 10px;
+  border-radius: 3px;
+}
+
+.sidebar-link:hover {
+  background: #f0f0f0;
+  text-decoration: none;
+}
+
+.sidebar-link.active {
+  font-weight: 600;
+  background: #eeeeee;
+}
+
